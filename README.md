@@ -1,1 +1,9 @@
-# Puppet alfred for Boxen\n\nFIXME: update me bro\n
+# Alfred Puppet Module for Boxen
+
+Requires the `boxen` puppet module.
+
+## Usage
+
+```puppet
+include alfred
+```
