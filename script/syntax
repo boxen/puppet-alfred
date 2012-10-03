@@ -1,0 +1,20 @@
+#!/bin/sh
+# syntax check puppet and ruby
+
+puppets=`find manifests -name '*.pp' -print`
+rubies=`find lib spec -name '*.rb' -print 2>/dev/null`
+
+for puppet in $puppets; do
+  /bin/echo -n "${puppet}: "
+  bin/puppet parser validate $puppet
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
+done
+
+for ruby in $rubies; do
+  ruby -wc $ruby
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
+done

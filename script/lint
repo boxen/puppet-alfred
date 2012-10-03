@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bin/puppet-lint --fail-on-warnings --with-filename manifests
