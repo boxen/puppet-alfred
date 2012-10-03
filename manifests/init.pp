@@ -1,3 +1,8 @@
+# Public: Install Alfred.app into /Applications.
+#
+# Examples
+#
+#   include alfred
 class alfred {
   package { 'Alfred':
     provider => 'appdmg',
