@@ -1,6 +1,10 @@
 #!/bin/sh
 # syntax check puppet and ruby
 
+[[ ! -f bin/puppet ]] && {
+  script/bootstrap
+}
+
 puppets=`find manifests -name '*.pp' -print`
 rubies=`find lib spec -name '*.rb' -print 2>/dev/null`
 

@@ -1,5 +1,9 @@
 #!/bin/sh
 
+[[ ! -f bin/puppet-lint ]] && {
+  script/bootstrap
+}
+
 echo
 echo "puppet-lint"
 echo "-----------"
