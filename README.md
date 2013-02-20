@@ -8,9 +8,13 @@ Install [Alfred](http://www.alfredapp.com), a productivity app for Mac OS X.
 # Stable release
 include alfred
 
-# 2.0 Beta release (currently only available to [Mega Supporters](https://buy.alfredapp.com/))
+# 2.0 Beta release (currently only available to Mega Supporters)
 include alfred::v2beta
 ```
+
+## v2.0 Beta
+
+You can use the v2.0 by purchasing the [Mega Supporter Powerpack](https://buy.alfredapp.com/)
 
 ## Required Puppet Modules
 
