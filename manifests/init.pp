@@ -6,6 +6,6 @@
 class alfred {
   package { 'Alfred':
     provider => 'compressed_app',
-    source   => 'http://cachefly.alfredapp.com/alfred_1.3.2_265.zip'
+    source   => 'http://cachefly.alfredapp.com/alfred_1.3.3_267.zip'
   }
 }
