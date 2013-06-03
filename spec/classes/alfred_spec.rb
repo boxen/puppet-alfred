@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 classes = {
-  'alfred'     => 'http://cachefly.alfredapp.com/Alfred_2.0.3_187.zip',
+  'alfred'     => 'http://cachefly.alfredapp.com/Alfred_2.0.4_199.zip',
   'alfred::v1' => 'http://cachefly.alfredapp.com/alfred_1.4_268.zip'
 }
 
