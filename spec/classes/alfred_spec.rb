@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 classes = {
-  'alfred'     => 'http://cachefly.alfredapp.com/Alfred_2.0.4_199.zip',
+  'alfred'     => 'http://cachefly.alfredapp.com/Alfred_2.0.5_202.zip',
   'alfred::v1' => 'http://cachefly.alfredapp.com/alfred_1.4_268.zip'
 }
 
@@ -11,9 +11,9 @@ classes.each do |version, source|
 	describe version do
   	it do
     	should contain_package('Alfred').with({
-      :source   => source,
-      :provider => 'compressed_app'
-    })
+        :source   => source,
+        :provider => 'compressed_app'
+      })
   	end
 	end
 end
