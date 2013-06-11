@@ -5,7 +5,7 @@
 #   include alfred
 class alfred {
   package { 'Alfred':
-    source   => 'http://cachefly.alfredapp.com/Alfred_2.0.4_199.zip',
-    provider => 'compressed_app'
+    provider => 'compressed_app',
+    source   => 'http://cachefly.alfredapp.com/Alfred_2.0.5_202.zip'
   }
 }
