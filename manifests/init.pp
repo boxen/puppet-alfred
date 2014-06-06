@@ -3,9 +3,11 @@
 # Examples
 #
 #   include alfred
-class alfred {
+class alfred (
+  $version = '2.2_243b'
+) {
   package { 'Alfred 2':
     provider => 'compressed_app',
-    source   => 'http://cachefly.alfredapp.com/Alfred_2.2_243b.zip'
+    source   => "http://cachefly.alfredapp.com/Alfred_${version}.zip"
   }
 }
